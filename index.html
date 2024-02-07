@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap News</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar bg-body-tertiary bg-opacity-50  navbar-dark me-3 ms-3 ">
+        <div class="container-fluid d-flex">
+            <form class="d-flex justify-content-between w-100" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <h1 class="fst-italic text-dark">News</h1>
+                <button class="btn btn-outline-primary w-25" type="submit">Sign Up</button>
+            </form>
+        </div>
+    </nav>
+    <nav
+        class="navbar navbar-expand-lg bg-body-tertiary bg-opacity-50 border border-dark border-start-0 border-end-0 border-opacity-50 me-3 ms-3">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="#">Top News</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-white" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Local News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">International</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Magazine</a></li>
+                            <li><a class="dropdown-item" href="#">Naturel</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Sicience</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-disabled="true">Lifestyle</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="mainp.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-dark fs-3 bg-opacity-50 bg-warning w-50">İnternational News</h5>
+                        <p class="text-dark fs-3 bg-opacity-50 bg-warning w-50">The best news in the country</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="nesw.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-dark fs-3 bg-opacity-50 bg-primary w-50">Global Problems</h5>
+                        <p class="text-dark fs-3 bg-opacity-50 bg-primary w-50">Everybody needs fresh air.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="lifestyle.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-dark fs-3 bg-opacity-50 bg-success w-50">For Health</h5>
+                        <p class="text-dark fs-3 bg-opacity-50 bg-success w-50">Walking by the sea every morning is
+                            excellent for health. </p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="cards d-flex ">
+            <div class="card m-5" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="design.jpg" class="img-fluid rounded-start w-100 h-100" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">Design</h5>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore,
+                                repellendus. </p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 5 day ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card m-5" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="world.jpg" class="img-fluid rounded-start w-100 h-100" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title text-info">World</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, sint!
+                            </p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 hours ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="cardlar">
+            <div class="card text-bg-dark mb-5">
+                <img src="taxi.jpg" class="card-img w-100 h-75 " alt="...">
+                <div class="card-img-overlay">
+
+                    <h1 class="card-text">
+                        </h1class>Traffic Problems in Time Square</h1>
+                    <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card text-bg-dark mb-5">
+                <img src="holiday.jpg" class="card-img w-100 h-100 " alt="...">
+                <div class="card-img-overlay">
+
+                    <h1 class="card-text">
+                        </h1class>The best way to spend your holiday</h1>
+                    <p class="card-text"><small>Last updated 5 days ago</small></p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="cardes">
+                    <div class="card text-bg-primary bg-opacity-50 text-info mb-3" style="max-width: 18rem;">
+                        <div class="card-header">World</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Stiation</h5>
+                            <p class="card-text">Recent global developments underscore the urgent need for collaborative
+                                efforts to address pressing issues such as climate change and geopolitical tensions. As
+                                nations strive for sustainability and peace, international cooperation remains paramount
+                                in shaping a better future for all.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card text-bg-secondary bg-opacity-50 text-success mb-3" style="max-width: 18rem;">
+                        <div class="card-header">National</div>
+                        <div class="card-body">
+                            <h5 class="card-title">About</h5>
+                            <p class="card-text">
+                                National news reports indicate a surge in vaccination rates across the country,
+                                bolstering efforts to combat the ongoing pandemic. Additionally, discussions regarding
+                                new economic policies aimed at revitalizing the workforce are gaining traction in
+                                government circles.</p>
+                        </div>
+                    </div>
+                    <div class="card text-bg-success bg-opacity-50 text-secondary mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Nature</div>
+                        <div class="card-body">
+                            <h5 class="card-title">About</h5>
+                            <p class="card-text">
+                                Nature is a vital system providing essential resources for human survival. The balance
+                                and diversity of ecosystems are crucial grounds for the preservation of nature.</p>
+                        </div>
+                    </div>
+                    <div class="card text-bg-danger bg-opacity-50 text-warning mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Food</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Inside </h5>
+                            <p class="card-text">
+                                Consuming expired or improperly stored perishable foods can pose serious health
+                                risks, including food poisoning and gastrointestinal issues. Additionally, foods
+                                contaminated with harmful bacteria or toxins should be handled and disposed of with
+                                caution to prevent potential illness.
+                            <p>
+                        </div>
+                    </div>
+                    <div class="card text-bg-warning bg-opacity-50 text-danger mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Warning</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Attention like that</h5>
+                            <p class="card-text">
+                                It's crucial to pay attention to detail and follow safety protocols in potentially
+                                hazardous environments to mitigate risks and ensure personal well-being. Additionally,
+                                staying informed and making informed decisions can greatly contribute to overall safety
+                                and success in various endeavors.</p>
+                        </div>
+                    </div>
+                    <div class="card text-bg-info bg-opacity-50 text-primary mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Blue</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Why this color</h5>
+                            <p class="card-text">SBlue color is often associated with tranquility and calmness, evoking
+                                a sense of serenity and peace. Additionally, it is frequently used to symbolize trust,
+                                reliability, and stability in various contexts.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card text-bg-light bg-opacity-50 text-dark mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Magazine</div>
+                        <div class="card-body">
+                            <h5 class="card-title">Personal life</h5>
+                            <p class="card-text">Magazine industry continues to thrive, offering a diverse array of
+                                entertainment, fashion, and celebrity news to captivate audiences worldwide. With its
+                                blend of glamour and gossip, the world of celebrity culture remains a fascinating realm
+                                for many.</p>
+                        </div>
+                    </div>
+                    <div class="card text-bg-dark bg-opacity-50 text-white mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Lifestyle</div>
+                        <div class="card-body">
+                            <h5 class="card-title">For Health</h5>
+                            <p class="card-text">
+                                Lifestyle encompasses the attitudes, behaviors, and habits that define how individuals
+                                live and interact with the world around them. It reflects personal choices regarding
+                                health, leisure activities, fashion, and social interactions, shaping one's overall
+                                well-being and identity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <h2>From the Firehose</h2>
+                <div class="head border-top border-bottom border-black">
+                    <h1>Sample blog post</h1>
+                    <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap.
+                        Basic typography, lists, tables, images, code, and more are all supported as expected.
+                    </p>
+                </div>
+                <div class="main border-bottom border-black">
+                    <p>This is some additional paragraph placeholder content. It has been written to fill the available
+                        space and show how a longer snippet of text affects the surrounding content. We'll repeat it
+                        often to keep the demonstration flowing, so be on the lookout for this exact same string of
+                        text.
+                    </p>
+                    <h3>Blockquotes</h3>
+                    <span>This is an example blockquote in action:</span>
+                    <h4>Quoted text goes here.</h4>
+                    <p>This is some additional paragraph placeholder content. It has been written to fill the available
+                        space and show how a longer snippet of text affects the surrounding content. We'll repeat it
+                        often to keep the demonstration flowing, so be on the lookout for this exact same string of
+                        text.</p>
+                    <h3>Example lists</h3>
+                    <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the
+                        other highly repetitive body text used throughout. This is an example unordered list:</p>
+                    <p>First list item <br>
+                        Second list item with a longer description <br>
+                        Third list item to close it out</p>
+                    <span>And this is an ordered list:</span>
+                    <p>1.First list item <br>
+                        2. Second list item with a longer description <br>
+                        3.Third list item to close it out
+                    </p>
+                </div>
+                <div class="tables">
+                    <h1>Another blog post</h1>
+                    <p>This is some additional paragraph placeholder content. It has been written to fill the available
+                        space and show how a longer snippet of text affects the surrounding content. We'll repeat it
+                        often to keep the demonstration flowing, so be on the lookout for this exact same string of
+                        text.
+
+                    </p>
+                    <p>Longer quote goes here, maybe with some emphasized text in the middle of it. </p>
+                    <p>This is some additional paragraph placeholder content. It has been written to fill the available
+                        space and show how a longer snippet of text affects the surrounding content. We'll repeat it
+                        often to keep the demonstration flowing, so be on the lookout for this exact same string of
+                        text.
+
+                    </p>
+                    <h3>Example table</h3>
+                    <p>And don't forget about tables in these posts:</p>
+
+                    <table class="table border-start-0 border-end-0  ">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Upvotes</th>
+                                <th scope="col">Downvotes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Elena </td>
+                                <td>50</td>
+                                <td>40</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Ian</td>
+                                <td>43</td>
+                                <td>76</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Mina</td>
+                                <td>68</td>
+                                <td>25</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="about fst-italic">
+                    <h4 class="text-primary">Introduction:</h4>
+                    <p>
+                        A news website serves as a digital platform dedicated to providing timely and relevant
+                        information on a wide range of topics, including current events, politics, business, sports,
+                        entertainment, and more. In today's fast-paced world, where information is readily accessible at
+                        the click of a button, news websites play a crucial role in keeping the public informed and
+                        engaged. With the advent of the internet, traditional print media has evolved, and news websites
+                        have become an indispensable source of news for millions of people around the globe.
+                    </p>
+                    <h4 class="text-success"> Content Diversity:</h4>
+                    <p>One of the key features of a news website is its diverse range of content, catering to the varied
+                        interests and preferences of its audience. From breaking news stories to in-depth analysis,
+                        opinion pieces, feature articles, and multimedia presentations, news websites offer a
+                        comprehensive and multifaceted view of current events and issues. This diverse array of content
+                        allows users to delve deeper into topics of interest and gain a more nuanced understanding of
+                        complex issues.</p>
+
+                    <h4 class="text-warning">Accessibility and Convenience:</h4>
+                    <p>Unlike traditional print newspapers, which are limited by physical distribution and circulation
+                        constraints, news websites offer unparalleled accessibility and convenience. Users can access
+                        news articles and updates anytime, anywhere, using their smartphones, tablets, or computers.
+                        This accessibility ensures that people can stay informed and up-to-date with the latest
+                        developments, even when they are on the go or in remote locations.</p>
+                    <h4 class="text-danger">Real-Time Updates:</h4>
+                    <p> One of the most significant advantages of news websites is their ability to provide real-time
+                        updates on breaking news stories and events as they unfold. Through live blogs, social media
+                        feeds, and instant notifications, news websites keep users informed of the latest developments,
+                        ensuring that they are always in the know. This real-time reporting enables users to stay ahead
+                        of the curve and react promptly to rapidly evolving situations.</p>
+                    <h4 class="text-primary">Interactive Features:</h4>
+                    <p> Many news websites incorporate interactive features such as polls, quizzes, comment sections,
+                        and user-generated content, fostering greater engagement and interactivity among users. These
+                        features allow readers to share their opinions, participate in discussions, and contribute to
+                        the ongoing dialogue surrounding news stories and events. By fostering a sense of community and
+                        interaction, news websites create a more dynamic and engaging user experience.</p>
+                    <h4 class="text-success"> Multimedia Content:</h4>
+                    <p> In addition to written articles and text-based content, news websites often feature a wealth of
+                        multimedia elements, including photos, videos, infographics, and interactive graphics. These
+                        multimedia components help to enhance the storytelling experience, providing users with a
+                        visually compelling and immersive way to consume news and information. Whether it's a
+                        captivating photojournalistic slideshow or a gripping video documentary, multimedia content adds
+                        depth and richness to the news website's coverage.</p>
+                    <h4 class="text-warning">Credibility and Trustworthiness:</h4>
+                    <p>Maintaining credibility and trustworthiness is paramount for any news website, as it relies on
+                        its reputation to attract and retain readers. By adhering to journalistic standards of accuracy,
+                        objectivity, and integrity, news websites strive to earn the trust of their audience and
+                        establish themselves as reliable sources of information. This commitment to quality journalism
+                        is essential for upholding the public's trust and ensuring the continued success and relevance
+                        of the news website in an increasingly competitive media landscape.
+
+                        In conclusion, news websites play a vital role in today's media ecosystem, offering a diverse
+                        range of content, unparalleled accessibility, real-time updates, interactive features,
+                        multimedia content, and a commitment to credibility and trustworthiness. By leveraging the power
+                        of digital technology, news websites provide a dynamic and engaging platform for informing,
+                        educating, and entertaining audiences around the world.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- 
+    <ul class="nav nav-pills nav-fill gap-2 p-1 small bg-primary rounded-5 shadow-sm" id="pillNav2" role="tablist"
+        style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active rounded-5" id="home-tab2" data-bs-toggle="tab" type="button" role="tab"
+                aria-selected="true">Home</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link rounded-5" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab"
+                aria-selected="false">Profile</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link rounded-5" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab"
+                aria-selected="false">Contact</button>
+        </li>
+    </ul> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

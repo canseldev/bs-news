@@ -1,0 +1,9 @@
+body {
+    background-color:lightgrey;
+}
+.form-control {
+    max-width: 300px;
+}
+.cardes {
+    font-weight: bold;
+}
